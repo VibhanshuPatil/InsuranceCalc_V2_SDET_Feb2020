@@ -4,16 +4,32 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class Assignment1 {
 	
 	public static void main(String [] args)
 	{
+		
+		/*
+		 * Try Executing the same Test case on all Major browsers you have on your
+		 * laptop. (You can use either WebDriver manager to manager driver executables
+		 * automatically or download and use them manually. Have habit of using both
+		 * because some companies may not allow using webdriverManager).
+		 */
 
 //Step 1
 		
 		//Opening Chrome web browser
 		WebDriver driver = new ChromeDriver(); 
+		
+		//Using Internet Explorer
+		// WebDriver driver = new InternetExplorerDriver();
+		
+		//  Using Edge
+		//WebDriver driver = new EdgeDriver();
+	
 		
 		// Maximize the browser
 		driver.manage().window().maximize();
@@ -33,7 +49,7 @@ public class Assignment1 {
 		String actualTitle = driver.getTitle();
 		System.out.println(actualTitle);
 		
-		String expectedTitle = "qdPM | Login";
+		String expectedTitle = "qdPM } Login";
 		 
 		if(expectedTitle.equals(actualTitle)) {
 			System.out.println("Test Case Pass...Matching Title");
