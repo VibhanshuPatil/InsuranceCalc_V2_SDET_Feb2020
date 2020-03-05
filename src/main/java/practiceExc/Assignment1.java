@@ -27,8 +27,12 @@ public class Assignment1 {
 		//Using Internet Explorer
 		// WebDriver driver = new InternetExplorerDriver();
 		
-		//  Using Edge
+		  //Using Edge
+		//System.setProperty("webdriver.edge.driver", "msedgedriver.exe");
 		//WebDriver driver = new EdgeDriver();
+		
+/***************Using WrbDriver dependencies********************************/
+		
 	
 		
 		// Maximize the browser
