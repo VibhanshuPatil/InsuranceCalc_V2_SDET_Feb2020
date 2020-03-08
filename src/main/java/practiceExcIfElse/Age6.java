@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Age6 {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 /* 6.   Take input of age of 3 people by user and determine oldest and youngest among them.*/
@@ -23,13 +26,38 @@ public class Age6 {
 		 age.close();
 		 
 		 
+//		 if (a > b && b > c) {
+//			 System.out.println("Oldest person age is "+a);
+//		 } else if (b > a && a > c) {
+//			 System.out.println("Oldest person age is "+b);
+//		 } else if (c > a && a > b) {
+//			 System.out.println("Oldest person age is " +c);
+//		 } else if (a < b && b < c) {
+//			 System.out.println("Youngest Person age is " +a);
+//		 } else if (b < a && a < c) {
+//			 System.out.println("Youngest person age is " + b);
+//		 } else {
+//			 System.out.println("Youngest person age is " +c);
+//		 }
+//		 
+//		
 		 if (a > b && b > c) {
 			 System.out.println("Oldest person age is "+a);
 		 } else if (b > a && a > c) {
 			 System.out.println("Oldest person age is "+b);
-		 } else if (c >)
+		 } else if (c > a && a > b) {
+			 System.out.println("Oldest person age is " +c);
+		 } else if (a < b && b < c) {
+			 System.out.println("Youngest Person age is " +a);
+		 } else if (b < a && a < c) {
+			 System.out.println("Youngest person age is " + b);
+		 } else {
+			 System.out.println("Youngest person age is " +c);
+		 }
 		 
+		
 		 
+	
 		 
 		 
 	}
