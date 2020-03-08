@@ -22,36 +22,29 @@ public class StudentAttendanceMedicalCondition9 {
 		
 		System.out.println("Enter total number of class: " ); 
 		double totalClass = scan.nextDouble();
-		System.out.println("Enter total umber class attended: ");
+		System.out.println("Enter total number class attended: ");
 		double attendance = scan.nextDouble();
 		//System.out.println("Enter Student Medical condition: Please Press y/n ");
 		// String medicalISsue = scan.nextLine();
-		
-		
+			
 		//scan.close();
 				
 		double requiredAttendance = totalClass*0.75;
-		double actualAttendance = totalClass - requiredAttendance;
+		//double actualAttendance = totalClass - requiredAttendance;
 		
-		/*if (attendance <= requiredAttendance) {
+		if (requiredAttendance > attendance  ) {
 			
-			System.out.println("Studen has less then 75% attendance: ");
-			System.out.println("Is student had medical condition: ");
-			if (no.equalsIgnoreCase("N")) {
-				System.out.println("Not allow to sit in exam");
-			}	*/
-					
-		
-		if (actualAttendance < requiredAttendance ) {
-			
-
 			System.out.println("Student had medical condition?: Press y/n");
-			String med = scan.nextLine();
-			if (med.equals("y")) {
+			char med = scan.next().charAt(0);
+			
+			
+			if (med == 'y'){
 				System.out.println("Student is allow to write exam due to medical condition");
 			}
-			else {
+			else if (med == 'n') {
 				System.out.println("Student is not allow to write exam due to poor attendance");
+			} else {
+				System.out.println("Please enter valid answer");
 			}
 	} else {
 		System.out.println("Student is allow to write exam.");
@@ -62,3 +55,13 @@ public class StudentAttendanceMedicalCondition9 {
 	}
 
 }
+
+
+
+/*if (attendance <= requiredAttendance) {
+
+System.out.println("Studen has less then 75% attendance: ");
+System.out.println("Is student had medical condition: ");
+if (no.equalsIgnoreCase("N")) {
+	System.out.println("Not allow to sit in exam");
+}	*/
