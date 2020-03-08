@@ -2,7 +2,7 @@ package practiceExcIfElse;
 
 import java.util.Scanner;
 
-public class AbsoluteValue {
+public class AbsoluteValue7 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
