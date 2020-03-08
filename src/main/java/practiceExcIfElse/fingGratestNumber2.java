@@ -2,7 +2,7 @@ package practiceExcIfElse;
 
 import java.util.Scanner;
 
-public class fingGratestNumber {
+public class fingGratestNumber2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -17,7 +17,7 @@ public class fingGratestNumber {
 		scan.close();
 		
 		if(num1 > num2) {
-			System.out.println(num1 +  "is greatest number");
+			System.out.println(num1 +  " is greatest number");
 		} else {
 			System.out.println(num2 +  " is greatest number");
 		}
